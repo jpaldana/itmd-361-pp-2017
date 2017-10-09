@@ -29,6 +29,7 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 /* ==== LAYOUT STYLES ==== */
 #content {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column-reverse;
 }
 
@@ -36,7 +37,6 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 #two,
 #one {
   height: 100vw;
-  width: 100vw;
 }
 
 #three {
@@ -59,13 +59,12 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
   
   #one,
   #two {
+    flex: 0 1 50%;
     height: 50vw;
-    width: 50vw;
   }
 
   #three {
-    height: 100vw;
-    width: 100vw;
+    flex: 0 1 100%;
   }
 }
 
@@ -73,7 +72,7 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
   #three,
   #two,
   #one {
+    flex: 1 1 auto;
     height: 33.333vw;
-    width: 33.333vw;
   }
 }
