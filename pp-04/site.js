@@ -47,6 +47,10 @@ console.log(typeof i) // should be 'undefined', not 3
 //  variable x declared on line 5 above. Write your explanation
 //  as JavaScript comments.
 
+// in addTwo(), the variable `x` is a variable whose value is only
+// within a local scope (i.e. within the function body of addTwo())
+// and is not a global variable.
+
 function addTwo(x) {
   x = x + 2;
   return x;
