@@ -39,7 +39,7 @@ function arrayEach(array, func) {
   }
 }
 
-arrayEach(['red','green','blue'], console.log);
+arrayEach(['red', 'green', 'blue'], console.log);
 
 console.log(typeof i); // should be 'undefined', not 3
 
