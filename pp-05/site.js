@@ -6,12 +6,12 @@ $.noConflict();
     var doorbell = new Audio('media/doorbell.mp3');
     doorbell.play();
   }
-  
+
   /* remove audio element for js-supported browsers */
-  $("audio").remove();
+  $('audio').remove();
 
   /* add click event listener */
-  $("#doorbell").on("click", function() {
+  $('#doorbell').on('click', function() {
     ringDoorbell();
   });
 })(jQuery);
