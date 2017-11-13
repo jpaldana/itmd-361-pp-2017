@@ -6,4 +6,9 @@ function ringDoorbell() {
 $(function() {
   /* remove audio element for js-supported browsers */
   $("audio").remove();
+
+  /* add click event listener */
+  $("#doorbell").on("click", function(e) {
+    ringDoorbell();
+  });
 });
