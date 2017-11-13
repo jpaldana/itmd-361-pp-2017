@@ -20,6 +20,9 @@ body {
 
 /* ===== LAYOUT STYLES ===== */
 
+button:hover {
+  cursor: pointer;
+}
 
 /* ===== MODULAR STYLES ===== */
 
