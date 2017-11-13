@@ -8,7 +8,7 @@ $(function() {
   $("audio").remove();
 
   /* add click event listener */
-  $("#doorbell").on("click", function(e) {
+  $("#doorbell").on("click", function() {
     ringDoorbell();
   });
 });
