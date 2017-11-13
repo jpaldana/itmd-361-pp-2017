@@ -14,4 +14,13 @@ $.noConflict();
   $('#doorbell').on('click', function() {
     ringDoorbell();
   });
+
+  /* add keydown (keyboard input) event handler */
+  $('body').on('keydown', function(e) {
+    switch(e.which) {
+      case 68: /* `d` key */
+        ringDoorbell();
+      break;
+    }
+  });
 })(jQuery);
