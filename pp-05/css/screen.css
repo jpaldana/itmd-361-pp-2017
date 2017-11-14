@@ -20,7 +20,14 @@ body {
 
 /* ===== LAYOUT STYLES ===== */
 
-button:hover {
+#doorbell {
+  background-color: #dfdfdf;
+  color: black;
+  display: inline;
+  padding: 0.2em;
+}
+#doorbell:hover {
+  background-color: #bfbfbf;
   cursor: pointer;
 }
 
